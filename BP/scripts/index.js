@@ -333,7 +333,7 @@ async function searchUI(player, searchItem, page = 1) {
     const auctions = db.get("AllAuctions").filter(item => item.type.startsWith(searchItem.toLowerCase()) || item.type.endsWith(searchItem.toLowerCase())).sort((a, b) => b.data.createDate - a.data.createDate)
     const pages = Math.ceil((auctions.length || 1) / 45)
     const form = new ChestFormData("large")
-    form.title(`Search by subject ${searchItem}§r [${page}/${pages}]`)
+    form.title(`Search ${searchItem}§r [${page}/${pages}]`)
     form.button(49, "Auctions", [`Total items: §g${auctions.length}`, `§aClick to update`], "minecraft:ender_eye", 1)
     if (page !== 1) {
         form.button(48, "Previous page", ["§aClick to go to"], "minecraft:arrow", 1)
