@@ -1,0 +1,41 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Auction house BP",
+		"description": "-ah help",
+		"uuid": "3ed84690-d5c3-483d-a48e-5fc377f53018",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [ 1, 20, 40 ]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "6b074f32-9805-4c2f-8a1a-deedfdcfcdc7",
+			"version": [ 0, 0, 1 ]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/index.js",
+			"uuid": "24135ac9-e497-42c1-8b24-388d042ef17d",
+			"version": "1.4.0-beta"
+		}
+	],
+	"metadata": {
+		"authors": ["WhiteeCattt"],
+		"license": "MIT",
+		"url": "https://github.com/WhiteeCattt/Auction-house"
+	},
+	"dependencies": [
+		{
+			"description": "@minecraft/server module dependency",
+			"module_name": "@minecraft/server",
+			"version": "1.7.0-beta"
+		},
+		{
+			"description": "@minecraft/server-ui module dependency",
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		}
+	]
+}
