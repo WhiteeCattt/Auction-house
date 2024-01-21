@@ -15,3 +15,4 @@
 ## In the plans:
 - Expired items page
 - Prohibited items for sell
+- Confirmation of purchases
