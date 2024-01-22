@@ -1,4 +1,4 @@
-export function expiresTime(duration) {
+export function expiredTime(duration) {
     if (duration === Infinity) return "never";
     const millisecondsPerSecond = 1000;
     const millisecondsPerMinute = 60 * millisecondsPerSecond;
