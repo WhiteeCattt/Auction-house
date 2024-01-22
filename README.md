@@ -12,7 +12,4 @@
 - Pages
 - Open source
 
-## In the plans:
-- Expired items page
-- Prohibited items for sell
-- Confirmation of purchases
+**If you find a bug/error please let me know!**
