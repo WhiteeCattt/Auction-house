@@ -5,7 +5,7 @@
 		"description": "-ah help",
 		"uuid": "3ed84690-d5c3-483d-a48e-5fc377f53018",
 		"version": [ 1, 0, 0 ],
-		"min_engine_version": [ 1, 20, 40 ]
+		"min_engine_version": [ 1, 20, 60 ]
 	},
 	"modules": [
 		{
@@ -30,7 +30,7 @@
 		{
 			"description": "@minecraft/server module dependency",
 			"module_name": "@minecraft/server",
-			"version": "1.7.0-beta"
+			"version": "1.9.0-beta"
 		},
 		{
 			"description": "@minecraft/server-ui module dependency",
