@@ -162,7 +162,7 @@ async function AuctionHouseUI(player, page = 1) {
         const data = pagedItems[i]
         let description = []
         let enchant = false
-        const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+        const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
         if (enchantments.length > 0) {
             enchant = true
             enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
@@ -257,7 +257,7 @@ async function listingUI(player, target, page = 1) {
         const data = pagedItems[i]
         let description = []
         let enchant = false
-        const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+        const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
         if (enchantments.length > 0) {
             enchant = true
             enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
@@ -349,7 +349,7 @@ async function searchUI(player, searchItem, page = 1) {
         const data = pagedItems[i]
         let description = []
         let enchant = false
-        const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+        const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
         if (enchantments.length > 0) {
             enchant = true
             enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
@@ -441,7 +441,7 @@ async function manageUI(player, page = 1) {
         const data = pagedItems[i]
         let description = []
         let enchant = false
-        const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+        const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
         if (enchantments.length > 0) {
             enchant = true
             enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
@@ -517,7 +517,7 @@ async function expiredItemsUI(player, target, page = 1) {
         const data = pagedItems[i]
         let description = []
         let enchant = false
-        const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+        const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
         if (enchantments.length > 0) {
             enchant = true
             enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
@@ -580,7 +580,7 @@ async function confirmUI(player, item, data) {
     }
     let description = []
     let enchant = false
-    const enchantments = Array.from(item.getComponent("enchantments").enchantments)
+    const enchantments = item.getComponent("enchantable")?.getEnchantments() ?? []
     if (enchantments.length > 0) {
         enchant = true
         enchantments.forEach(enchant => description.push(`§7${enchant.type.id} ${toRomanNumber(enchant.level)}`))
