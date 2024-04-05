@@ -30,7 +30,7 @@
 		{
 			"description": "@minecraft/server module dependency",
 			"module_name": "@minecraft/server",
-			"version": "1.9.0-beta"
+			"version": "1.10.0-beta"
 		},
 		{
 			"description": "@minecraft/server-ui module dependency",
